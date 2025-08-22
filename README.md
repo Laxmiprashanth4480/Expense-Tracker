@@ -43,6 +43,7 @@ Pocketly is a powerful and intuitive expense tracker application built using the
     ```bash
     MONGODB_URI=<your_mongodb_connection_string>
     REACT_APP_GEMINI_API_KEY=<your_genai_api_key>
+    REACT_APP_API_BASE=http://localhost:5000/api/v1
     ```
 4. Install the frontend dependencies:
     ```bash

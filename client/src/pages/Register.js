@@ -12,10 +12,12 @@ const Register = () => {
   // Serve from /public/assets
   const registerHero1 = "/assets/loginhero2.png";
 
+  const API_BASE = process.env.REACT_APP_API_BASE || "/api/v1";
+
   const submitHandler = async (values) => {
     try {
       setLoading(true);
-      await axios.post(`${process.env.REACT_APP_API_BASE}/users/register`, values);
+      await axios.post(`${API_BASE}/users/register`, values);
       message.success("Registration successful");
       navigate("/login");
     } catch (error) {
