@@ -117,7 +117,7 @@ const HomePage = () => {
         await axios.post("/transactions/edit-transaction", {
           payload: {
             ...values,
-            userId: user._id,
+            userid: user._id,
           },
           transactionId: editable._id,
         });

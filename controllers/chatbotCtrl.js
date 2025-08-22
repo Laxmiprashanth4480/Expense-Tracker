@@ -18,7 +18,7 @@ async function handleChatbot(req, res) {
   try {
     const { message, userid } = req.body || {};
     if (!message || !userid) {
-      return res.status(400).json({ error: "Message and userId are required" });
+      return res.status(400).json({ error: "Message and userid are required" });
     }
     if (!GEMINI_API_KEY) {
       return res.status(500).json({ error: "Server misconfigured: GEMINI_API_KEY is missing" });
@@ -38,7 +38,7 @@ async function handleAnalysis(req, res) {
   try {
     const { type, data, userid } = req.body || {};
     if (!type || !data || !userid) {
-      return res.status(400).json({ error: "Type, data, and userId are required" });
+      return res.status(400).json({ error: "Type, data, and userid are required" });
     }
     if (!GEMINI_API_KEY) {
       return res.status(500).json({ error: "Server misconfigured: GEMINI_API_KEY is missing" });
