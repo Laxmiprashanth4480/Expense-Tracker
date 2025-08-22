@@ -19,7 +19,7 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
   const [allTransaction, setAllTransaction] = useState([]);
   const [frequency, setFrequency] = useState("7");
-  const [selectedDate, setSelectedate] = useState([]);
+  const [selectedDate, setSelectedDate] = useState([]);
   const [type, setType] = useState("all");
   const [viewData, setViewData] = useState("table");
   const [editable, setEditable] = useState(null);
@@ -154,7 +154,7 @@ const HomePage = () => {
           {frequency === "custom" && (
             <RangePicker
               value={selectedDate}
-              onChange={(values) => setSelectedate(values)}
+              onChange={(values) => setSelectedDate(values)}
             />
           )}
         </div>
@@ -168,7 +168,7 @@ const HomePage = () => {
           {frequency === "custom" && (
             <RangePicker
               value={selectedDate}
-              onChange={(values) => setSelectedate(values)}
+              onChange={(values) => setSelectedDate(values)}
             />
           )}
         </div>
