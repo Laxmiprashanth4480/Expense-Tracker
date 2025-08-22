@@ -56,4 +56,12 @@ Pocketly is a powerful and intuitive expense tracker application built using the
     ```
 This will launch `server.js` on http://localhost:8080 and the app on http://localhost:3000.
 
+### Running Backend Tests
+
+From the project root, execute the following to run Jest tests for the backend APIs:
+
+```bash
+npm test
+```
+
 Enjoy managing your finances with Pocketly! 💰📊
