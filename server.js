@@ -12,9 +12,6 @@ const userRoutes = require("./routes/userRoute");
 const transactionRoutes = require("./routes/transactionRoutes");
 const chatbotRoutes = require("./routes/chatbotRoutes");
 
-// Connect to MongoDB
-connectDb();
-
 const app = express();
 
 // Middlewares
@@ -49,9 +46,13 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message || "Server error" });
 });
 
-// Port (use 5000 by default for your dev setup)
-const PORT = process.env.PORT || 5000;
+// Only connect to DB and start server if not in test mode
+if (process.env.NODE_ENV !== "test") {
+  connectDb();
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`✅ Server is running on port ${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
-});
+module.exports = app;
