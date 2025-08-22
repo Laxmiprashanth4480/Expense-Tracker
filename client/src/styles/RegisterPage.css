@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* General page styling */
+.register-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f8faff;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side for the image */
+.register-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Adjust the image size */
+.illustration img {
+  max-width: 70%;
+  height: auto;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+/* Right side for the register form */
+.register-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.welcome-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.welcome-subtitle {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ant-form-item-label > label {
+  color: #666;
+  font-weight: 500;
+}
+
+.ant-input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.ant-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.register-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* "Already Registered" link */
+.already-registered {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.already-registered:hover {
+  text-decoration: underline;
+}
+/* Logo Title Style */
+.logo-title {
+  font-family: "Montserrat", sans-serif; /* Use the imported font */
+  font-size: 2rem; /* Adjust font size */
+  color: #149423; /* Change color to fit your theme */
+  margin-bottom: 1rem; /* Space below the title */
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Distance from the top */
+  left: 20px; /* Distance from the left */
+}
+
+/* Login Now button */
+.login-now-button {
+  display: inline-block;
+  text-align: center;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.login-now-button:hover {
+  background-color: #f0f0f0;
+}
