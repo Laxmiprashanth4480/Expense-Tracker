@@ -34,9 +34,8 @@ Pocketly is a powerful and intuitive expense tracker application built using the
    git clone https://github.com/snehapadgaonkar/Expense-Tracker.git
    cd Expense-Tracker
    ```
-2. Install backend dependencies:
+2. Install backend dependencies from the project root (where `server.js` resides):
     ```bash
-    cd server
     npm install
     ```
 3. Set up environment variables:
@@ -46,13 +45,14 @@ Pocketly is a powerful and intuitive expense tracker application built using the
     ```
 4. Install the frontend dependencies:
     ```bash
-    cd ../client
+    cd client
     npm install
+    cd ..
     ```
 5. Run the application using:
     ```bash
     npm run dev
     ```
-This will start the app on http://localhost:3000 and the server on http://localhost:8080.
+This will launch `server.js` on http://localhost:8080 and the app on http://localhost:3000.
 
 Enjoy managing your finances with Pocketly! 💰📊
