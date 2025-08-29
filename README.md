@@ -1,6 +1,6 @@
-# Pocketly: Expense Tracking System
+# Expense Tracking System
 
-Pocketly is a powerful and intuitive expense tracker application built using the MERN stack (MongoDB, Express, React, Node.js) and integrated with GenAI. This application helps users track their income, expenses, and financial habits, providing insights and suggestions for better financial management.
+Expense Tracker is a powerful and intuitive expense tracker application built using the MERN stack (MongoDB, Express, React, Node.js) and integrated with GenAI. This application helps users track their income, expenses, and financial habits, providing insights and suggestions for better financial management.
 
 ## Features
 
@@ -31,7 +31,7 @@ Pocketly is a powerful and intuitive expense tracker application built using the
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/snehapadgaonkar/Expense-Tracker.git
+   git clone https://github.com/Laxmiprashanth4480/Expense-Tracker.git
    cd Expense-Tracker
    ```
 2. Install backend dependencies from the project root (where `server.js` resides):
@@ -64,4 +64,4 @@ From the project root, execute the following to run Jest tests for the backend A
 npm test
 ```
 
-Enjoy managing your finances with Pocketly! 💰📊
+Enjoy managing your finances with Expense-Tracker! 💰📊
